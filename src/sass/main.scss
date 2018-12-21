@@ -13,18 +13,15 @@ hr{
   width: 40px;
   border: 1px solid #29323c;
 }
+
+
 @import "normalize/import-now";
 @import 'utils/variables';
 @import 'base/basic';
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/services';
-
-
-
-
-
-
+@import 'layout/contact';
 @import 'layout/works';
 @import 'layout/footer';
 @import 'pages/home';
