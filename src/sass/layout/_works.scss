@@ -1,0 +1,19 @@
+.works{
+  text-align: center;
+  padding-top: 5px;
+  @media screen and (min-width: 1170px){
+    padding-top: 30px;}
+}
+.works__examples{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+  @media screen and (min-width: 1170px){
+    padding-top: 60px;}
+  img{
+    width: 234px;
+    height: 150px;}
+}
+
