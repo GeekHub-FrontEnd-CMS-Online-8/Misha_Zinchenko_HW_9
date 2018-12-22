@@ -7,14 +7,11 @@ body{
   margin: 0 auto;
   @media screen and (min-width:1170px){
     width: 1170px; 
-  }
-}
+}}
 hr{
   width: 40px;
   border: 1px solid #29323c;
 }
-
-
 @import "normalize/import-now";
 @import 'utils/variables';
 @import 'base/basic';
@@ -23,5 +20,6 @@ hr{
 @import 'layout/services';
 @import 'layout/contact';
 @import 'layout/works';
+@import 'layout/pricing';
 @import 'layout/footer';
 @import 'pages/home';
