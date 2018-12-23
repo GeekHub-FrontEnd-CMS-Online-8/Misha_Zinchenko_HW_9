@@ -14,5 +14,9 @@
     padding-top: 60px;}
   img{
     width: 234px;
-    height: 150px;
-}}
+    height: 150px; 
+  }
+  img:hover{
+    transform: scale(1.3);
+  }
+}
