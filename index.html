@@ -7,6 +7,7 @@
     <title>Misha_Zinchenko_HW_9</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFb9nZpUAIqc5jyM9BRK3j3Tj_hNhdPcU"></script>
 </head>
 <body>
 
@@ -25,13 +26,13 @@
                             <span></span>
                             <span></span>
                             <ul class="menu">
-                                <a href="#"><li>Home</li></a>
-                                <a href="#services"><li>Services</li></a>
-                                <a href="#works"><li>Works</li></a>
-                                <a href="#clients"><li>Clients</li></a>
-                                <a href="#team"><li>Team</li></a>
-                                <a href="#pricing"><li>Pricing</li></a>
-                                <a href="#contact"><li>Contact</li></a>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#works">Works</a></li>
+                                <li><a href="#client">Clients</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                     </div>
                     </div>
@@ -137,8 +138,9 @@
         </div>
     </section>
     
-    <section class="clients" id="clients">
+    <section class="clients" id="client">
         <div class="content">
+            <h2>.</h2>
 
         </div>
     </section>
@@ -221,12 +223,13 @@
 
     <section class="partners" id="partners">
         <div class="content">
+            <h2>.</h2>
             <div class="partners__link">
-                <a><img src="src/img/cocacola.png" width="" height="" alt=""></a>
-                <img src="src/img/dropbox.png" width="" height="" alt="">
-                <img src="src/img/intel.png" width="" height="" alt="">
-                <img src="src/img/zendesk.png" width="" height="" alt="">
-                <img src="src/img/nokia.png" width="" height="" alt="">
+                <a><img src="src/img/cocacola.png" alt=""></a>
+                <img src="src/img/dropbox.png" alt="">
+                <img src="src/img/intel.png" alt="">
+                <img src="src/img/zendesk.png" alt="">
+                <img src="src/img/nokia.png" alt="">
             </div>
         </div>
     </section>
@@ -280,28 +283,27 @@
         </div>
     </section>
 
-    <section class="contact" id="content">
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1941.6845550371895!2d32.0405889847828!3d49.45576615756921!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1545432212674" width="650" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
+    <section class="contact" id="contact">
+        <h2>.</h2>
+        <div id="map" class="map"></div>
                 <div class="form">
                     <div class="form__bg">
                     <form action="get" class="registration">
                         <div class="registration__field">
                             <label for="name">Name</label>
-                            <input type="text" class="name">
+                            <input id="name" type="text" class="name">
                         </div>
                         <div class="registration__field">
                             <label for="email">Email</label>
-                            <input type="email" class="email">
+                            <input id="email" type="email" class="email">
                         </div>
                         <div class="registration__field">
                             <label for="phone">Phone</label>
-                            <input type="text" class="phone">
+                            <input id="phone" type="text" class="phone">
                         </div>
                         <div class="registration__field">
                             <label for="message">Message</label>
-                            <textarea name="message" class="message"></textarea>
+                            <textarea id="message" name="message" class="message"></textarea>
                         </div>
                         <button class="form__btn">Submit</button>
                     </form>
@@ -328,8 +330,16 @@
             </div>
         </div>
     </footer>
-
     
+
+    <script>
+            function initMap() {
+            var centerLatLng = new google.maps.LatLng(56.2928515, 43.7866641);
+            var mapOptions = {center: centerLatLng, zoom: 8 };
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);}
+            google.maps.event.addDomListener(window, "load", initMap);
+            </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFb9nZpUAIqc5jyM9BRK3j3Tj_hNhdPcU"></script>    
     
 
 </body>
